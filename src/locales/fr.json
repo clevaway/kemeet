@@ -1,11 +1,9 @@
 {
-    "message": "Bonjour i18n !!",
-    "gettings": {
-      "morning": "Salut Bien Bonjour",
-      "evning": "Salut Bien Bonsoir"
-    },
-  "about": {
-    "title": "Ceci est une page à propos",
-    "body": "Vous pouvez cliquer sur ce pour accéder au contenu"
+  "introText": "KéMeet est une alternative Open-source de zoom. Simple, belle, rapide et sécurisée, 100% GRATUITE pour toujours ! Entrez simplement l'identifiant d'une réunion et connectez-vous à n'importe qui d'autre dans cette réunion ! Vous pouvez même partager votre écran si vous êtes sur le desktop!",
+  "meetingStart": {
+    "enterMeetingId": "Entrez l'ID de la réunion",
+    "joinMeeting": "Rejoindre",
+    "newMeeting": "Nouvelle réunion",
+    "developedBy": "Construits avec amour par"
   }
 }

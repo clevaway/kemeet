@@ -4,7 +4,7 @@
       <router-link
         class="my-auto font-bold text-gray-600 text-xl"
         :to="`/${$i18n.locale}/`"
-        >Vue-call</router-link
+        >KéMeet</router-link
       >
     </div>
     <div class="flex space-x-2 my-auto">

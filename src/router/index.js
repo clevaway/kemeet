@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Room from '../views/Room.vue'
 import i18n from '../i18n'
 
 
@@ -21,6 +22,12 @@ const routes = [
           path: '/',
           name: 'Home',
           component: Home
+        },
+        {
+          path: 'room/:roomId',
+          name: 'Room',
+          component: Room,
+          props: true
         },
         {
           path: 'about',

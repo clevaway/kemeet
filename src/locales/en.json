@@ -1,11 +1,9 @@
 {
-  "message": "hello i18n !!",
-  "gettings": {
-    "morning": "Hi good morning",
-    "evning": "Hi good evening"
-  }, 
-  "about": {
-    "title": "This is an about page",
-    "body": "You can click on this to go to the content"
+  "introText": "KéMeet is a Simple, beautiful, fast and secured Open-source zoom alternative, 100% FREE forever! Simply enter a meeting room ID and connect to anyone else in that room! You can even share your screen if you are on desktop!",
+  "meetingStart": {
+    "enterMeetingId": "Enter meeting ID",
+    "joinMeeting": "Join",
+    "newMeeting": "New meeting",
+    "developedBy": "Built with love by"
   }
 }
