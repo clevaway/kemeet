@@ -1,0 +1,11 @@
+{
+  "message": "hello i18n !!",
+  "gettings": {
+    "morning": "Hi good morning",
+    "evning": "Hi good evening"
+  }, 
+  "about": {
+    "title": "This is an about page",
+    "body": "You can click on this to go to the content"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "message": "Bonjour i18n !!",
+    "gettings": {
+      "morning": "Salut Bien Bonjour",
+      "evning": "Salut Bien Bonsoir"
+    },
+  "about": {
+    "title": "Ceci est une page à propos",
+    "body": "Vous pouvez cliquer sur ce pour accéder au contenu"
+  }
+}
