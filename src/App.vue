@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link :to="`/${$i18n.locale}`">Home</router-link> |
-      <router-link :to="`/${$i18n.locale}/about`">About</router-link>
+    <div class="px-6 py-8">
+      <Appbar />
+      <!-- <router-link :to="`/${$i18n.locale}`">Home</router-link> |
+      <router-link :to="`/${$i18n.locale}/about`">About</router-link> -->
+      <router-view />
     </div>
-    <router-view />
   </div>
 </template>
+<script>
+import Appbar from "@/components/Appbar.vue";
 
+export default {
+  components: {
+    Appbar,
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,16 +26,16 @@
   color: #2c3e50;
 }
 
-#nav {
+/* #nav {
   padding: 30px;
-}
+} */
 
-#nav a {
+/* #nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

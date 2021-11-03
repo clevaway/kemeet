@@ -1,19 +1,27 @@
 <template>
   <div class="home">
-    {{ $t("gettings.morning") }}, Fotie
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- {{ $t("gettings.morning") }}, Fotie -->
+    <div class="flex space-x-6 mt-4">
+      <div class="w-8/12">
+        <VideoBox />
+      </div>
+      <div class="w-4/12 bg-gray-400 h-screen">
+        <ChatBox />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import VideoBox from "@/components/VideoBox.vue";
+import ChatBox from "@/components/ChatBox.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    VideoBox,
+    ChatBox,
   },
 };
 </script>
