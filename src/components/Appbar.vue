@@ -1,17 +1,17 @@
 <template>
-  <div class="flex justify-between">
-    <div>
+  <div class="flex justify-between responsive-wrap">
+    <div class="responsive-child">
       <router-link
         class="my-auto font-bold text-gray-600 text-xl"
         :to="`/${$i18n.locale}/`"
         >KéMeet</router-link
       >
     </div>
-    <div class="flex space-x-2 my-auto">
+    <div class="flex space-x-2 my-auto responsive-child">
       <div>Design Check-in Meeting</div>
       <div class="bg-gray-300 p-1 text-xs rounded-lg">14:02</div>
     </div>
-    <div class="flex space-x-2">
+    <div class="flex space-x-2 responsive-child">
       <div class="my-auto">
         <button><span class="material-icons"> light_mode </span></button>
       </div>
