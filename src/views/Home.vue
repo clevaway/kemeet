@@ -3,7 +3,7 @@
     <div class="w-7/12 mx-auto">
       {{ $t("introText") }}
     </div>
-    <div class="flex space-x-2 justify-center mt-16 responsive-wrap">
+    <div class="flex flex-wrap space-x-2 justify-center mt-16">
       <div class="mt-2 mb-2">
         <input
           class="border rounded-sm p-2 w-56"
@@ -12,7 +12,7 @@
           id="room-input"
         />
       </div>
-      <div class="responsive-nowrap space-x-2">
+      <div class="flex flex-nowrap space-x-2">
         <div class="mt-2 mb-2">
           <router-link
             class="bg-red-400 text-white font-medium py-2 px-3 rounded-lg"

@@ -15,6 +15,9 @@ module.exports = {
       borderColor: {
         
       },
+      screens: {
+        'md':'750px',
+      }
     },
   },
   variants: {
