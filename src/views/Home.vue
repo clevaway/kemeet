@@ -3,8 +3,8 @@
     <div class="w-7/12 mx-auto">
       {{ $t("introText") }}
     </div>
-    <div class="flex space-x-2 justify-center mt-16">
-      <div>
+    <div class="flex flex-wrap space-x-2 justify-center mt-16">
+      <div class="mt-2 mb-2">
         <input
           class="border rounded-sm p-2 w-56"
           v-model="roomId"
@@ -12,21 +12,24 @@
           id="room-input"
         />
       </div>
-      <div class="mt-2">
-        <router-link
-          class="bg-red-400 text-white font-medium py-2 px-3 rounded-lg"
-          :to="`/${$i18n.locale}/room/${roomId}`"
-        >
-          {{ $t("meetingStart.joinMeeting") }}
-        </router-link>
-      </div>
-      <div class="mt-2">
-        <router-link
-          class="bg-green-500 text-white font-medium py-2 px-3 rounded-lg"
-          :to="`/${$i18n.locale}/room/${newMeetingRoomId}`"
-        >
-          {{ $t("meetingStart.newMeeting") }}
-        </router-link>
+      <div class="flex flex-nowrap space-x-2">
+        <div class="mt-2 mb-2">
+          <router-link
+            class="bg-red-400 text-white font-medium py-2 px-3 rounded-lg"
+            :to="`/${$i18n.locale}/room/${roomId}`"
+          >
+            {{ $t("meetingStart.joinMeeting") }}
+          </router-link>
+        </div>
+        <div class="mt-2 mb-2">
+          <router-link
+            class="bg-green-500 text-white font-medium py-2 px-3 rounded-lg"
+            :to="`/${$i18n.locale}/room/${newMeetingRoomId}`"
+          >
+            {{ $t("meetingStart.newMeeting") }}
+          </router-link>
+        </div>
+
       </div>
     </div>
     <div class="w-7/12 mx-auto mt-10 text-gray-500">
