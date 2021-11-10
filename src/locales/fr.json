@@ -4,6 +4,10 @@
     "enterMeetingId": "Entrez l'ID de la réunion",
     "joinMeeting": "Rejoindre",
     "newMeeting": "Nouvelle réunion",
-    "developedBy": "Construits avec amour par"
+    "developedBy": "Construit avec amour par la Communauté"
+  },
+  "footer": {
+    "makeConstribution": "Apporter une contribution",
+    "license": "Publié sous la licence MIT"
   }
 }

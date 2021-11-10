@@ -30,13 +30,38 @@
       </div>
     </div>
     <div class="w-7/12 mx-auto mt-10 text-gray-500">
-      {{ $t("meetingStart.developedBy") }}
-      <a
-        target="_BLANK"
-        class="text-blue-400 font-bold"
-        href="http://twitter.com/fotie_codes"
-        >@fotie_codes</a
-      >
+      <div>
+        {{ $t("meetingStart.developedBy") }}
+      </div>
+      <div class="mt-10">
+        <div class="flex justify-center space-x-2">
+          <img
+            class="w-6"
+            src="https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_github_icon_143196.png"
+            alt=""
+          />
+          <div>
+            <a
+              target="_BLANK"
+              class="text-blue-400 font-bold"
+              href="https://github.com/FotieMConstant/kemeet"
+              >{{ $t("footer.makeConstribution") }}</a
+            >
+          </div>
+        </div>
+        <div class="mt-5">
+          <div>{{ $t("footer.license") }}</div>
+          Copyright ©
+          {{ new Date().getFullYear() }}
+          <a
+            target="_BLANK"
+            class="text-blue-400 font-bold"
+            href="http://twitter.com/fotie_codes"
+            >fotiecodes</a
+          >
+          Open-source
+        </div>
+      </div>
     </div>
   </div>
 </template>
