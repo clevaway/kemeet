@@ -1,11 +1,11 @@
 <template>
   <div class="room">
     <!-- {{ $t("gettings.morning") }}, Fotie -->
-    <div class="flex space-x-6 mt-4">
-      <div class="w-8/12">
+    <div class="md:flex md:space-x-6 mt-4">
+      <div class="md:w-8/12">
         <VideoBox :roomIdForVideoBox="roomId" />
       </div>
-      <div class="w-4/12 bg-gray-400">
+      <div class="w-4/12 bg-gray-400 hidden md:block">
         <ChatBox />
       </div>
     </div>

@@ -16,12 +16,12 @@
     <div class="mt-5">
       <div class="flex justify-between">
         <div class="flex space-x-2">
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> settings </span>
             </button>
           </div>
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> volume_up </span>
             </button>
@@ -38,7 +38,7 @@
               <span class="material-icons my-auto"> videocam </span>
             </button>
           </div>
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> camera_alt </span>
             </button>
@@ -67,19 +67,19 @@
               <span class="material-icons my-auto"> person_add </span>
             </button>
           </div>
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> fullscreen </span>
             </button>
           </div>
         </div>
         <div class="flex space-x-2">
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> splitscreen </span>
             </button>
           </div>
-          <div class="">
+          <div class="hidden md:block">
             <button class="px-1.5 pt-1.5 bg-gray-200 rounded-full">
               <span class="material-icons my-auto"> textsms </span>
             </button>
@@ -106,7 +106,11 @@ export default {
       mediaRecorder: null,
       chunks: [],
       userStream: null,
+      currentUrl: "",
     };
+  },
+  created() {
+    this.currentUrl = window.location.href;
   },
   mounted() {
     this.joinMeeting();
@@ -178,10 +182,9 @@ export default {
       console.log(streamId);
     },
     async copyClipboard() {
-      await navigator.clipboard.writeText(
-        `https://meet.jcompsolu.com/${this.roomId}`
-      );
+      await navigator.clipboard.writeText(this.currentUrl);
       alert("Link copied to clipboard!");
+      console.log("You copied => ", this.currentUrl);
     },
   },
 };
