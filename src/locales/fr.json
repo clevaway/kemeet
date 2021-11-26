@@ -6,6 +6,12 @@
     "newMeeting": "Nouvelle réunion",
     "developedBy": "Construit avec amour par la Communauté"
   },
+  "errors": {
+    "meeting": {
+      "required": "Le Champ meeting ID est requis",
+      "lenght": "Le meeting ID doit avoir 20 caractères"
+    }
+  },
   "footer": {
     "makeConstribution": "Apporter une contribution",
     "license": "Publié sous la licence MIT"

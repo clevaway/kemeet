@@ -3,27 +3,27 @@
     <div class="w-7/12 mx-auto">
       {{ $t("introText") }}
     </div>
-    <div class="flex flex-wrap space-x-2 justify-center mt-16">
-      <div class="mt-2 mb-2">
+    <div class="flex flex-wrap justify-center mt-16 space-x-2">
+      <div class="flex flex-col mt-2 mb-2">
         <input
-          class="border rounded-sm p-2 w-56"
+          class="w-56 p-2 border rounded-sm"
           v-model="roomId"
           :placeholder="$t('meetingStart.enterMeetingId')"
           id="room-input"
         />
+        <span v-if="meetingIdError" class="text-sm text-red-500">{{ meetingIdError }}</span>
       </div>
-      <div class="flex flex-nowrap space-x-2">
+      <div class="flex space-x-2 flex-nowrap">
         <div class="mt-2 mb-2">
-          <router-link
-            class="bg-red-400 text-white font-medium py-2 px-3 rounded-lg"
-            :to="`/${$i18n.locale}/room/${roomId}`"
+          <button @click="joinMeetingRoom"
+            class="px-3 py-2 font-medium text-white bg-red-400 rounded-lg"
           >
             {{ $t("meetingStart.joinMeeting") }}
-          </router-link>
+          </button>
         </div>
         <div class="mt-2 mb-2">
           <router-link
-            class="bg-green-500 text-white font-medium py-2 px-3 rounded-lg"
+            class="inline-flex px-3 py-2 font-medium text-white bg-green-500 rounded-lg"
             :to="`/${$i18n.locale}/room/${newMeetingRoomId}`"
           >
             {{ $t("meetingStart.newMeeting") }}
@@ -46,7 +46,7 @@
           <div>
             <a
               target="_BLANK"
-              class="text-blue-400 font-bold"
+              class="font-bold text-blue-400"
               href="https://github.com/FotieMConstant/kemeet"
               >{{ $t("footer.makeConstribution") }}</a
             >
@@ -58,7 +58,7 @@
           {{ new Date().getFullYear() }}
           <a
             target="_BLANK"
-            class="text-blue-400 font-bold"
+            class="font-bold text-blue-400"
             href="http://twitter.com/fotie_codes"
             >fotiecodes</a
           >
@@ -75,12 +75,32 @@ export default {
     return {
       roomId: "",
       newMeetingRoomId: "", // new room
+      meetingIdError: "",
     };
   },
   mounted() {
     this.getUniqueMeetingId();
   },
   methods: {
+    checkMeetingId(){
+      this.meetingIdError = "";
+
+      if(this.roomId == ""){
+        this.meetingIdError = this.$t('errors.meeting.required');
+      }
+      else if(this.roomId.length != 20){
+        this.meetingIdError = this.$t('errors.meeting.lenght');
+      }
+
+      return this.meetingIdError == "" ? true : false;
+    },
+    joinMeetingRoom(){
+      // validate the meeting ID input
+      if(this.checkMeetingId()){
+        // redirect to the meeting room
+        this.$router.push({name: 'Room', params: {roomId : this.roomId}});
+      }
+    },
     getUniqueMeetingId() {
       this.newMeetingRoomId = this.makeMeetingId(20);
     },
