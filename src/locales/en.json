@@ -6,6 +6,12 @@
     "newMeeting": "New meeting",
     "developedBy": "Built with love by the Community"
   },
+  "errors": {
+    "meeting": {
+      "required": "The meeting ID is required",
+      "lenght": "The meeting ID must be 20 characters"
+    }
+  },
   "footer": {
     "makeConstribution": "Make contribution",
     "license": "Released under the MIT License"
