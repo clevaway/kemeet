@@ -50,10 +50,10 @@ To get started! You're going to fork this repository, try creating a branch, mak
 
 ## Contributing
 ### Remember please all pull request should be sent to the dev branch*
-Please read [CONTRIBUTING.md](https://github.com/FotieMConstant/bond/blob/main/CONTRIBUTING.md) for details on this project.
+Please read [CONTRIBUTING.md](https://github.com/FotieMConstant/kemeet/blob/main/CONTRIBUTING.md) for details on this project.
 
 ## Code of Conduct
-Please read [CODE_OF_CONDUCT.MD](https://github.com/FotieMConstant/bond/blob/main/CODE_OF_CONDUCT.md) for details on our code of conduct.
+Please read [CODE_OF_CONDUCT.MD](https://github.com/FotieMConstant/kemeet/blob/main/CODE_OF_CONDUCT.md) for details on our code of conduct.
 
 ## KémeetReviewers
 Contributors helping to review/merge pull requests:
