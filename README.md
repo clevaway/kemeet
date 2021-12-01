@@ -5,9 +5,8 @@
   <strong>Best Open-source zoom alternative 🚀</strong>
 </p>
 <p align="center">
-  <a href="https://discord.gg/cA8zVJ7wgR">
-    <img src="https://img.shields.io/badge/Discord-Online-green?style=for-the-badge&logo=appveyor" alt="discord - users online" />
-  </a>
+    <a href="https://www.producthunt.com/posts/kemeet?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kemeet" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321411&theme=dark" alt="KéMeet - Best Open-source zoom alternative | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 </p>
 
 <h3 align="center">  
@@ -36,10 +35,6 @@ All you need to do to use it is;
 - Simply enter a meeting room ID and connect to anyone else in that room!
 - You can even share your screen if you are using it on desktop!
 - Share it with friends and family, have fun as you use it!
-
-
-We are on producthunt: <br/><br/>
-<a href="https://www.producthunt.com/posts/kemeet?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kemeet" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321411&theme=dark" alt="KéMeet - Best Open-source zoom alternative | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 ## Why use Kémeet?
 - It's free and Open-source(No premium, hidden cost, nothing. 100% free forever)
