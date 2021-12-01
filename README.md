@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/FotieMConstant/bond/main/logo.png"/>
+    <img height="100" width="100" src="https://raw.githubusercontent.com/FotieMConstant/kemeet/main/other/logo-transparent.png"/>
 </p>
 <p align="center">
   <strong>Best Open-source zoom alternative 🚀</strong>
