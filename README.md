@@ -21,6 +21,14 @@
 
 ---
 
+KéMeet is a simple, beautiful, fast and secure Open-source alternative to Zoom. It is entirely free to download and use; it shall be and remain 100% FREE forever!
+All you need to do to use it is;
+
+- Simply enter a meeting room ID and connect to anyone else in that room!
+- You can even share your screen if you are using it on desktop!
+- Share it with friends and family, have fun as you use it!
+
+
 ## Tech stack
 
 | Codebase |      Description      |
@@ -28,13 +36,6 @@
 |front-end |          Vue          |
 | Real-time video |   WebRTC.      |
 |Server-side |  using an Open signaling server for now, built and deployed by <a href="https://github.com/westonsoftware/">westonsoftware</a>         |
-
-KéMeet is a simple, beautiful, fast and secure Open-source alternative to Zoom. It is entirely free to download and use; it shall be and remain 100% FREE forever!
-All you need to do to use it is;
-
-- Simply enter a meeting room ID and connect to anyone else in that room!
-- You can even share your screen if you are using it on desktop!
-- Share it with friends and family, have fun as you use it!
 
 ## Why use Kémeet?
 - It's free and Open-source(No premium, hidden cost, nothing. 100% free forever)
