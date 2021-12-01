@@ -41,6 +41,11 @@ All you need to do to use it is;
 We are on producthunt: <br/><br/>
 <a href="https://www.producthunt.com/posts/kemeet?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kemeet" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=321411&theme=dark" alt="KéMeet - Best Open-source zoom alternative | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
+## Why use Kémeet?
+- It's free and Open-source(No premium, hidden cost, nothing. 100% free forever)
+- Fast and secure
+- No signups, just start the meeting and invite your fiends, familly or co-workers.
+- Cross platform since it works in the broswer, no need to install an app
 
 ## Getting Started🚀💻
 To get started! You're going to fork this repository, try creating a branch, make your changes, and create your first pull request!
