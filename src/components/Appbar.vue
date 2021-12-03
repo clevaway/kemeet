@@ -1,16 +1,27 @@
 <template>
-  <div class="flex flex-auto flex-wrap justify-center items-center md:justify-between md:flex-nowrap">
+  <div
+    class="
+      flex flex-auto flex-wrap
+      justify-center
+      items-center
+      md:justify-between md:flex-nowrap
+    "
+  >
     <div class="px-8 py-2 w-full md:w-auto">
       <router-link
-        class="my-auto font-bold text-gray-600 text-xl"
+        class="my-auto font-bold text-gray-600 text-xl flex"
         :to="`/${$i18n.locale}/`"
-        >KéMeet</router-link
       >
+        <div>
+          <img class="w-10" src="@/assets/img/logo.png" alt="" />
+        </div>
+        <div class="my-auto">KéMeet</div>
+      </router-link>
     </div>
-    <div class="flex px-8 py-2 space-x-2 my-auto">
+    <!-- <div class="flex px-8 py-2 space-x-2 my-auto">
       <div>Design Check-in Meeting</div>
       <div class="bg-gray-300 p-1 text-xs rounded-lg">14:02</div>
-    </div>
+    </div> -->
     <div class="flex px-8 py-2 space-x-2">
       <div class="my-auto">
         <button><span class="material-icons"> light_mode </span></button>
@@ -27,7 +38,7 @@
       <div class="my-auto">
         <button><span class="material-icons"> more_horiz </span></button>
       </div>
-      <div class="my-auto">
+      <!-- <div class="my-auto">
         <img
           class="
             w-12
@@ -40,7 +51,7 @@
           src="https://avatars.githubusercontent.com/u/42372656?v=4"
           alt=""
         />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
