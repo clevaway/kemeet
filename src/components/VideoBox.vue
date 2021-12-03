@@ -181,6 +181,7 @@ export default {
       // this.mediaRecorder.removeTrack(streamId)
       console.log(streamId);
     },
+    // function to copy to clipboard
     async copyClipboard() {
       await navigator.clipboard.writeText(this.currentUrl);
       alert("Link copied to clipboard!");
