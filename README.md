@@ -28,6 +28,14 @@ All you need to do to use it is;
 - You can even share your screen if you are using it on desktop!
 - Share it with friends and family, have fun as you use it!
 
+## Features
+- 100% free and open-source
+- No account needed
+- Unlimited users
+- Chat and video streaming in real-time (building chat)
+- Screen sharing to present documents, slides, and more
+- Everyting is peer-to-peer thanks to webrtc.
+
 
 ## Tech stack
 
