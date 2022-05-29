@@ -8,23 +8,14 @@ import i18n from '../i18n'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    redirect: `/${i18n.locale}`
-  },
-{ 
-  path: '/:lang',
-  component: {
-    render (c) { return c('router-view') },
-  },
-  children: [
+
         {
           path: '/',
           name: 'Home',
           component: Home
         },
         {
-          path: 'room/:roomId',
+          path: '/room/:roomId',
           name: 'Room',
           component: Room,
           props: true
@@ -37,9 +28,7 @@ const routes = [
           // which is lazy-loaded when the route is visited.
           component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
         }
-  ]
-
-}
+  
 ]
 
 const router = new VueRouter({
