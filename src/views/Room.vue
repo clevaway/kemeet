@@ -11,8 +11,8 @@
     </div> -->
     <div class="flex flex-col">
       <!-- main container -->
-      <div class="flex-1 flex flex-row overflow-y-hidden">
-        <nav class="overflow-y-auto mr-5">
+      <div class="flex-1 flex flex-row">
+        <nav class="">
           <div>
             <div class="bg-gray-100 rounded-full">
               <div>
@@ -109,7 +109,7 @@
           <!--/ main menu -->
         </nav>
 
-        <main class="flex-1 bg-gray-100 overflow-y-auto rounded-2xl">
+        <main class="sm:w-4/12 flex-1 bg-gray-100 rounded-2xl mx-4">
           <div class="m-6">
             <div class="flex justify-between">
               <div class="flex space-x-5">
@@ -269,7 +269,7 @@
               <!-- main character -->
               <div class="relative">
                 <img
-                  class="rounded-2xl w-full"
+                  class="rounded-2xl w-full object-cover h-80"
                   src="https://ak.picdn.net/shutterstock/videos/1029713963/thumb/1.jpg"
                   alt=""
                 />
@@ -331,9 +331,9 @@
               <!--/ main character -->
               <!-- underline view -->
               <div class="flex space-x-3">
-                <div class="relative mt-3 w-56">
+                <div class="relative mt-3 w-48 h-32">
                   <img
-                    class="rounded-2xl w-56"
+                    class="rounded-2xl w-48"
                     src="https://media.istockphoto.com/photos/smiling-african-business-woman-coach-teacher-hr-looking-at-camera-picture-id1164377498?k=20&m=1164377498&s=612x612&w=0&h=Z7Gf2aDxtf5bATpNxgyikcf4AMGRLS-9E11R3ImXFUE="
                     alt=""
                   />
@@ -381,9 +381,9 @@
                   </div>
                   <!--/ username section -->
                 </div>
-                <div class="relative mt-3 w-56">
+                <div class="relative mt-3 w-48 h-32">
                   <img
-                    class="rounded-2xl w-56"
+                    class="rounded-2xl w-48"
                     src="https://media.istockphoto.com/photos/smiling-black-woman-waving-talking-on-webcam-picture-id1158676693?k=20&m=1158676693&s=170667a&w=0&h=bt2bNdJY8jsO0hL-2A2smNVAZyUDnQaojpVjA49OLdY="
                     alt=""
                   />
@@ -431,9 +431,9 @@
                   </div>
                   <!--/ username section -->
                 </div>
-                <div class="relative mt-3 w-56">
+                <div class="relative mt-3 w-48 h-32">
                   <img
-                    class="rounded-2xl w-56"
+                    class="rounded-2xl w-48"
                     src="https://media.istockphoto.com/photos/happy-hispanic-latin-gen-z-teen-girl-blogger-smiling-face-waving-hand-picture-id1225782570?k=20&m=1225782570&s=612x612&w=0&h=6eCUG5ysliIItD3yQ5-oG0AY8qgByJCETDncgAf9Lpg="
                     alt=""
                   />
@@ -614,8 +614,201 @@
           </div>
         </main>
 
-        <aside class="sm:w-5/12 bg-yellow-100 overflow-y-auto ml-3">
-          Right Sidebar
+        <aside class="sm:w-4/12">
+          <div class="py-4">
+            <!-- participant top -->
+            <div class="flex justify-between px-2">
+              <div class="flex relative w-44">
+                <div class="font-bold text-2xl">Participants</div>
+                <div
+                  class="
+                    absolute
+                    -top-2
+                    right-2
+                    bg-blue-500
+                    text-white
+                    p-1
+                    px-2.5
+                    my-auto
+                    rounded-full
+                    text-xs
+                  "
+                >
+                  32
+                </div>
+              </div>
+              <div class="text-gray-400 cursor-pointer">View all</div>
+            </div>
+            <!--/ participant top -->
+          </div>
+
+          <div class="__participants relative">
+            <!-- item -->
+            <div
+              class="
+                flex
+                justify-between
+                hover:bg-gray-100
+                p-2
+                cursor-pointer
+                rounded-full
+              "
+            >
+              <div class="flex justify-between space-x-6">
+                <div>
+                  <img
+                    class="rounded-full w-12 h-12 object-cover"
+                    src="https://ak.picdn.net/shutterstock/videos/1029713963/thumb/1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="my-auto">Me</div>
+              </div>
+              <div class="flex justify-between space-x-4 my-auto pr-4">
+                <div class="my-auto">
+                  <span class="material-icons-round text-gray-500">
+                    mic_off
+                  </span>
+                </div>
+                <div class="my-auto">
+                  <span class="material-icons-round text-gray-500">
+                    videocam_off
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- /item -->
+            <!-- item -->
+            <div
+              v-for="item in 2"
+              :key="item"
+              class="
+                flex
+                justify-between
+                hover:bg-gray-100
+                p-2
+                cursor-pointer
+                rounded-full
+              "
+            >
+              <div class="flex justify-between space-x-6">
+                <div>
+                  <img
+                    class="rounded-full w-12 h-12 object-cover"
+                    src="https://media.istockphoto.com/photos/happy-hispanic-latin-gen-z-teen-girl-blogger-smiling-face-waving-hand-picture-id1225782570?k=20&m=1225782570&s=612x612&w=0&h=6eCUG5ysliIItD3yQ5-oG0AY8qgByJCETDncgAf9Lpg="
+                    alt=""
+                  />
+                </div>
+                <div class="my-auto">Stephanie</div>
+              </div>
+              <div class="flex justify-between space-x-4 my-auto pr-4">
+                <div class="my-auto">
+                  <span class="material-icons-round text-gray-500">
+                    mic_off
+                  </span>
+                </div>
+                <div class="my-auto">
+                  <span class="material-icons-round text-gray-500">
+                    videocam_off
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- /item -->
+
+            <!-- fade layout -->
+            <div id="gradient"></div>
+            <!--/ fade layout  -->
+          </div>
+          <div class="mt-4">
+            <!-- chat top -->
+            <div class="flex justify-between px-2">
+              <div class="flex relative w-44">
+                <div class="font-bold text-2xl">Chat</div>
+              </div>
+              <div class="text-gray-400 cursor-pointer">View all</div>
+            </div>
+            <!--/ chat top -->
+            <!-- chat container -->
+            <div class="relative">
+              <div class="mt-4 mx-2 h-96 overflow-y-auto">
+                <div class="mb-20">
+                  <!-- chat item -->
+                  <div
+                    v-for="item in 10"
+                    :key="item"
+                    class="flex space-x-3 mb-4"
+                  >
+                    <div class="">
+                      <img
+                        class="rounded-full w-12 h-10 object-cover"
+                        src="https://ak.picdn.net/shutterstock/videos/1029713963/thumb/1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text-left w-full">
+                      <div class="text-gray-400 ml-4 mb-2">fotiecodes</div>
+                      <div class="bg-gray-100 p-4 rounded-2xl text-sm">
+                        Hey guys, how are you?
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ chat item -->
+                </div>
+
+                <div class="absolute bottom-0 bg-white w-full">
+                  <div
+                    class="
+                      bg-gray-100
+                      flex
+                      justify-between
+                      p-3
+                      w-full
+                      rounded-full
+                    "
+                  >
+                    <div>
+                      <span
+                        class="
+                          material-icons-round
+                          bg-yellow-500
+                          text-white
+                          rounded-full
+                          p-3
+                          cursor-pointer
+                        "
+                      >
+                        emoji_emotions
+                      </span>
+                    </div>
+                    <div class="w-44">
+                      <input
+                        class="focus:outline-none bg-gray-100 w-60 py-3"
+                        type="text"
+                        placeholder="Type a message here..."
+                      />
+                    </div>
+                    <div>
+                      <span
+                        class="
+                          material-icons-round
+                          bg-blue-500
+                          text-white
+                          rounded-full
+                          p-3
+                          cursor-pointer
+                        "
+                      >
+                        send
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--/ chat container -->
+          </div>
         </aside>
       </div>
       <!-- end main container -->
@@ -642,3 +835,48 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#gradient {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 81px;
+  background: none;
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.97) 80%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(80%, rgba(255, 255, 255, 0.97))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.97) 80%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.97) 80%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.97) 80%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.97) 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+</style>

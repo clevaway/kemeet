@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="px-6 py-8">
+    <div class="px-6 py-2">
       <!-- <router-link :to="`/${$i18n.locale}`">Home</router-link> |
       <router-link :to="`/${$i18n.locale}/about`">About</router-link> -->
       <router-view />
