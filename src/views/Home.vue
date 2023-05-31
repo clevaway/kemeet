@@ -37,7 +37,7 @@
                 bg-green-500
                 rounded-lg
               "
-              :to="`/room/${newMeetingRoomId}`"
+              :to="`/${$i18n.locale}/room/${newMeetingRoomId}`"
             >
               {{ $t("meetingStart.newMeeting") }}
             </router-link>
