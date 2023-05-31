@@ -5,7 +5,7 @@
       <div class="w-7/12 mx-auto">
         {{ $t("introText") }}
       </div>
-      <!-- <div class="flex flex-wrap justify-center mt-16 space-x-2">
+      <div class="flex flex-wrap justify-center mt-16 space-x-2">
         <div class="flex flex-col mt-2 mb-2">
           <input
             class="w-56 p-2 border rounded-sm"
@@ -37,13 +37,13 @@
                 bg-green-500
                 rounded-lg
               "
-              :to="`/${$i18n.locale}/room/${newMeetingRoomId}`"
+              :to="`/room/${newMeetingRoomId}`"
             >
               {{ $t("meetingStart.newMeeting") }}
             </router-link>
           </div>
         </div>
-      </div> -->
+      </div>
       <div class="mt-10">
         <div class="font-bold text-lg">
           We are currently working on a new and better version.
