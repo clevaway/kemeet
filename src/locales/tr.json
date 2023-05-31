@@ -1,0 +1,21 @@
+{
+    "introText": "KéMeet basit, güzel, hızlı ve güvenli açık kaynak kodlu zoom alternatifi, Her zaman %100 Bedava! Basitçe bir toplantı odası ID'si gir ve bu odadaki herkesle bağlan! Eğer masaüstündeysen kendi ekranını bile paylaşabilirsin!",
+    "meetingStart": {
+      "enterMeetingId": "Toplantı ID'si gir",
+      "joinMeeting": "Katıl",
+      "newMeeting": "Yeni Toplantı",
+      "developedBy": "Topluluk tarafından sevgiyle inşa edildi"
+    },
+    "errors": {
+      "meeting": {
+        "required": "Toplantı ID'si gerekli",
+        "lenght": "Toplantı ID'si 290 karakterden oluşmalı"
+      }
+    },
+    "footer": {
+      "makeConstribution": "Katkı yap",
+      "license": "MIT Lisansı altında yayınlandı"
+    }
+  }
+
+  
