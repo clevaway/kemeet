@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <div class="px-6 py-8">
-      <Appbar />
+    <div class="px-6 py-2">
       <!-- <router-link :to="`/${$i18n.locale}`">Home</router-link> |
       <router-link :to="`/${$i18n.locale}/about`">About</router-link> -->
       <router-view />
@@ -9,13 +8,7 @@
   </div>
 </template>
 <script>
-import Appbar from "@/components/Appbar.vue";
-
-export default {
-  components: {
-    Appbar,
-  },
-};
+export default {};
 </script>
 <style>
 #app {
